@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitStart"
+        android:src="@drawable/codeforces_visualiser_main" />
+
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/codefoces_visualiser_main2"
+        android:scaleType="fitStart"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:id="@+id/enter_username"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_height="wrap_content"
+        android:text= "Enter Username"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username_field"
+        android:hint="Username"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/enter_username"
+        android:textSize="25sp"
+        android:inputType="text"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/submit"
+        android:onClick="onSubmitClick"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:background="@color/purple_500"
+        android:textStyle="bold"
+        android:layout_below="@id/username_field"/>
+
+</RelativeLayout>
